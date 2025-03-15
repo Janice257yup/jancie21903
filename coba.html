@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuristic Timeline</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="timeline">
+        <div class="timeline-line"></div>
+
+        <div class="timeline-item">
+            <div class="timeline-icon"><i class="fas fa-rocket"></i></div>
+            <div class="timeline-content">
+                <h2>Step 1: Discovery</h2>
+                <p>Exploring the unknown and gathering insights to shape the journey ahead.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-icon"><i class="fas fa-cogs"></i></div>
+            <div class="timeline-content">
+                <h2>Step 2: Development</h2>
+                <p>Building the foundation with innovative ideas and technology.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-icon"><i class="fas fa-lightbulb"></i></div>
+            <div class="timeline-content">
+                <h2>Step 3: Innovation</h2>
+                <p>Pushing boundaries to create groundbreaking solutions.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-icon"><i class="fas fa-trophy"></i></div>
+            <div class="timeline-content">
+                <h2>Step 4: Success</h2>
+                <p>Reaching the goal and making a lasting impact on the future.</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
+<style>/* Import Font Awesome */
+    @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+    
+    body {
+        font-family: 'Arial', sans-serif;
+        background: url('https://source.unsplash.com/1920x1080/?galaxy,stars') no-repeat center center fixed;
+        background-size: cover;
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        background: black;
+    }
+    
+    /* Timeline Container */
+    .timeline {
+        position: relative;
+        width: 600px;
+        max-width: 90%;
+    }
+    
+    /* Vertical Line */
+    .timeline-line {
+        position: absolute;
+        left: 30px;
+        top: 0;
+        bottom: 0;
+        width: 4px;
+        background: rgba(255, 255, 255, 0.4);
+        border-radius: 2px;
+    }
+    
+    /* Timeline Item */
+    .timeline-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+        position: relative;
+        animation: fadeIn 1.5s ease-in-out;
+    }
+    
+    /* Circular Icons */
+    .timeline-icon {
+        width: 50px;
+        height: 50px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 20px;
+        margin-right: 20px;
+        backdrop-filter: blur(5px);
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    /* Hover Effect */
+    .timeline-icon:hover {
+        transform: scale(1.2);
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+    
+    /* Glassmorphism Effect for Content Box */
+    .timeline-content {
+        flex: 1;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 15px;
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+        color: white;
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    }
+    
+    /* Title */
+    .timeline-content h2 {
+        margin: 0;
+        font-size: 1.5rem;
+        color: #00d9ff;
+    }
+    
+    /* Paragraph */
+    .timeline-content p {
+        font-size: 0.9rem;
+        margin-top: 5px;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    
+    /* Fade In Animation */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .timeline-item {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        
+        .timeline-icon {
+            margin-bottom: 10px;
+        }
+    }
+    </style>

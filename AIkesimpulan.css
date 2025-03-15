@@ -1,0 +1,1387 @@
+/* Global Styles */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-image: url('kankan.jpg');
+    background-size:contain, 90px;
+    background-position: center;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    padding-top: 60px;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* Background Overlay for Better Readability */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: -1;
+}
+/* Main Content Section - Sci-Fi Themed */
+/* Main Content Section - Sci-Fi Themed */
+.content-section29010 {
+    background-image: url(galaxy.jpg);
+    padding: 40px;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 1s ease-in-out;
+    z-index: -1;
+    margin-top: 10px;
+    
+    /* Unique Animated Border */
+    border: 4px solid transparent;
+    border-image: linear-gradient(45deg, cyan, magenta, blue) 1;
+    box-shadow: 
+        0 0 15px rgba(0, 255, 255, 0.6), 
+        0 0 30px rgba(0, 140, 255, 0.9), 
+        inset 0 0 15px rgba(255, 0, 255, 0.7);
+    
+    /* Animated Border Effect */
+    animation: glowingBorder 3s infinite linear;
+}
+
+/* Glowing Border Animation */
+@keyframes glowingBorder {
+    0% {
+        border-image-source: linear-gradient(45deg, cyan, magenta, blue);
+        box-shadow: 
+            0 0 15px rgba(0, 255, 255, 0.6), 
+            0 0 30px rgba(0, 140, 255, 0.9), 
+            inset 0 0 15px rgba(255, 0, 255, 0.7);
+    }
+    50% {
+        border-image-source: linear-gradient(45deg, blue, cyan, magenta);
+        box-shadow: 
+            0 0 25px rgba(0, 140, 255, 1), 
+            0 0 40px rgba(255, 0, 255, 0.9), 
+            inset 0 0 20px rgba(0, 255, 255, 0.8);
+    }
+    100% {
+        border-image-source: linear-gradient(45deg, magenta, blue, cyan);
+        box-shadow: 
+            0 0 15px rgba(0, 255, 255, 0.6), 
+            0 0 30px rgba(0, 140, 255, 0.9), 
+            inset 0 0 15px rgba(255, 0, 255, 0.7);
+    }
+}
+
+/* Floating Glowing Header - Advanced Sci-Fi */
+.h21 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 
+        0 0 10px rgba(0, 255, 255, 1), 
+        0 0 20px rgba(0, 140, 255, 1),
+        0 0 40px rgba(0, 140, 255, 0.8);
+    padding-bottom: 10px;
+    position: relative;
+    display: inline-block;
+    animation: neonGlow 2s infinite alternate ease-in-out, fadeIn 1s ease-in;
+}
+
+/* Sci-Fi Glow Effect - Advanced */
+.glow {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 12px;
+    background: linear-gradient(90deg, rgba(0, 140, 255, 0.8), rgba(255, 0, 255, 0.8));
+    box-shadow: 
+        0 0 15px rgba(0, 255, 255, 0.8), 
+        0 0 25px rgba(255, 0, 255, 0.9),
+        inset 0 0 10px rgba(255, 255, 255, 0.5);
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.9);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Glow Hover Effect */
+.glow:hover {
+    transform: scale(1.05);
+    box-shadow: 
+        0 0 25px rgba(0, 255, 255, 1), 
+        0 0 35px rgba(255, 0, 255, 1),
+        inset 0 0 15px rgba(255, 255, 255, 0.7);
+}
+
+/* Neon Border Flicker Effect */
+.glow::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 12px;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 
+        0 0 10px rgba(0, 255, 255, 0.9),
+        0 0 20px rgba(255, 0, 255, 0.9);
+    opacity: 0.8;
+    animation: flicker 1.5s infinite alternate ease-in-out;
+}
+
+/* Sci-Fi Glowing Underline Effect */
+.h21::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, rgba(0, 255, 255, 0.8), rgba(255, 0, 255, 0.8));
+    box-shadow: 0 0 10px rgba(0, 255, 255, 1), 0 0 20px rgba(255, 0, 255, 1);
+    margin-top: 5px;
+    animation: glowBar 1.5s infinite alternate ease-in-out;
+}
+
+/* Animations */
+@keyframes neonGlow {
+    0% { text-shadow: 0 0 15px rgba(0, 255, 255, 1), 0 0 25px rgba(0, 140, 255, 1); }
+    100% { text-shadow: 0 0 20px rgba(0, 255, 255, 0.9), 0 0 30px rgba(0, 140, 255, 0.9); }
+}
+
+@keyframes flicker {
+    0% { opacity: 0.6; box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); }
+    100% { opacity: 1; box-shadow: 0 0 15px rgba(255, 255, 255, 0.9); }
+}
+
+@keyframes glowBar {
+    0% { transform: scaleX(1); }
+    100% { transform: scaleX(1.1); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* Sci-Fi Text */
+.content-section29010 p {
+    font-size: 18px;
+    color: #ddd;
+    line-height: 1.6;
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.7);
+    margin: auto;
+}
+
+/* Bold Text with Neon Effect */
+.content-section29010 strong {
+    color: #ff4fff;
+    text-shadow: 0 0 5px rgba(255, 0, 255, 1), 0 0 10px rgba(255, 100, 255, 0.8);
+}
+
+/* Glowing Emoji Effect */
+.content-section29010 p strong::after {
+    content: " 🚀";
+    display: inline-block;
+    animation: floatEmoji 2s infinite alternate ease-in-out;
+}
+
+/* Animations */
+@keyframes glowPulse {
+    0% { text-shadow: 0 0 10px rgba(0, 255, 255, 1), 0 0 20px rgba(0, 140, 255, 1); }
+    100% { text-shadow: 0 0 15px rgba(0, 255, 255, 0.9), 0 0 25px rgba(0, 140, 255, 0.9); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes floatEmoji {
+    0% { transform: translateY(0px); }
+    100% { transform: translateY(-5px); }
+}
+
+.woy{
+    position: sticky;
+}
+
+
+.bubble {
+    position: absolute;
+    bottom: -50px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    animation: bubbles 6s infinite linear;
+}
+/* Futuristic Sci-Fi Navigation Bar */
+
+
+nav {
+    width: 100%;
+    background-image: url(INDEX2.jpg);
+    padding: 15px 0;
+    z-index: 100;
+    border-bottom: 2px solid linear-gradient(45deg, rgb(169, 2, 224), rgba(77, 124, 235, 0.8));
+    box-shadow: 0px 0px 20px linear-gradient(45deg, rgb(47, 49, 157), rgba(77, 124, 235, 0.8));
+}
+
+nav::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 100%;
+    background-size: contain;
+    box-shadow: 0 0 30px linear-gradient(45deg, rgb(13, 17, 255), rgba(77, 124, 235, 0.8));
+    filter: blur(10px);
+    z-index: -1;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    gap: 30px;
+}
+
+nav ul li {
+    position: relative;
+}
+nav ul li a {
+    text-decoration: none;
+    padding: 12px 25px;
+    color: rgb(255, 255, 255);
+    font-size: 1.3em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, rgb(88, 3, 107), rgba(77, 124, 235, 0.8), #9306ff, #1b1bff, #12e2ff, #7d00ff);
+    border-radius: 50px;
+    box-shadow: 0 0 15px rgba(112, 0, 235, 0.8), 0 0 20px rgba(87, 0, 167, 0.7);
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+}
+
+nav ul li a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(6, 4, 114, 0.3);
+    filter: blur(5px);
+    transition: all 0.5s ease;
+}
+
+nav ul li a:hover::before {
+    left: 100%;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    background: linear-gradient(90deg, #ff00d0, #7f19ff, #004cff, #3cefff);
+    transform: scale(1.2);
+    box-shadow: 0 0 25px rgba(255, 0, 255, 0.8), 0 0 30px rgba(112, 0, 235, 0.9);
+    text-shadow: 0 0 12px rgba(255, 255, 255, 1);
+}
+
+/* Particle Glow Effect */
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(circle, #ff007f, rgba(112, 0, 235, 0.5));
+    border-radius: 50%;
+    filter: blur(8px);
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    animation: particle-glow 2s infinite ease-in-out;
+    z-index: -1;
+}
+
+@keyframes particle-glow {
+    0%, 100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+    50% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+}
+
+
+@keyframes glitch {
+    0% {
+        text-shadow: -2px 2px 5px rgb(192, 248, 255);
+    }
+    100% {
+        text-shadow: 2px -2px 5px rgba(0, 170, 255, 0.7);
+    }
+}
+.yomama {
+    color: #ffffff;
+    text-shadow: 0 0 10px rgb(139, 8, 139), 0 0 20px rgba(0, 255, 255, 1), 0 0 30px rgb(66, 7, 65);
+}
+/* Dropdown Menu - Enhanced */
+.dropdown-content {
+    display: none;
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 30, 0.9);
+    min-width: 220px;
+    box-shadow: 0 0 15px rgba(0, 170, 255, 0.7);
+    border-radius: 15px;
+    padding: 10px 0;
+    z-index: 9999; /* Pastikan lebih tinggi dari elemen lain */
+    overflow: hidden;
+    border: 1px solid rgba(0, 170, 255, 0.6);
+    backdrop-filter: blur(8px);
+}
+
+/* Tambahkan posisi relative ke parent agar dropdown tetap di dalamnya */
+.dropdown {
+    position: relative;
+    z-index: 1000;
+}
+
+/* Pastikan dropdown tidak tertutup elemen lain */
+nav {
+    position: relative;
+    z-index: 100;
+}
+
+/* Hover efek */
+.dropdown-content li {
+    display: block;
+    margin: 0;
+    text-align: center;
+}
+
+.dropdown-content li a {
+    padding: 12px 20px;
+    display: block;
+    color: #0ff;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+}
+
+.dropdown-content li a:hover {
+    background: rgba(0, 170, 255, 0.8);
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* Tampilkan dropdown dengan efek */
+.dropdown:hover .dropdown-content {
+    display: block;
+    animation: dropdown-slide 0.4s ease;
+}
+/* Photo Section - Sci-Fi Glitch */
+.photosecti {
+    display: absolute;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+    position:relative;
+
+    /* Neon Border & Shadow */
+    background-image: url(techno.jpg);
+    width: fit-content;
+    border: 3px solid transparent;
+    border-image: linear-gradient(45deg, cyan, magenta, blue) 1;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5), 0 0 20px rgba(0, 140, 255, 0.8);
+    
+    /* Smooth Transition */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect - Soft Glow */
+.photosecti:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.8), 0 0 25px rgba(0, 140, 255, 1);
+}
+
+/* Click-Triggered Glitch */
+.photosecti:active {
+    animation: glitchEffect 0.1s infinite;
+}
+
+/* Stop glitch after 2 seconds */
+.photosecti.clicked {
+    animation: none !important;
+}
+
+/* Glitch Effect */
+@keyframes glitchEffect {
+    0% { transform: translate(0, 0); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(2px, -2px); }
+    60% { transform: translate(-1px, 1px); }
+    80% { transform: translate(1px, -1px); }
+    100% { transform: translate(0, 0); }
+}
+
+/* Image - Fit & Styled */
+.photosecti img {
+    border-radius: 10px;
+    object-fit: cover;
+    transition: filter 0.3s ease;
+
+}
+
+/* Hover Effect on Image */
+.photosecti:hover img {
+    filter: brightness(1.2) contrast(1.1);
+}
+/* Sci-Fi Glow Animation */
+@keyframes glowEffect {
+    0% { box-shadow: 0 0 5px rgba(255, 0, 255, 0.5); }
+    50% { box-shadow: 0 0 20px rgba(255, 0, 255, 1); }
+    100% { box-shadow: 0 0 5px rgba(255, 0, 255, 0.5); }
+}
+/* Sci-Fi Title */
+.sparkle-title4 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 20px;
+    margin: 0 auto; /* Center the title horizontally */
+    text-align: center; /* Center the text */
+    letter-spacing: 3px;
+    background: linear-gradient(rgba(0, 255, 255, 0.2), rgba(255, 0, 255, 0.2)); /* Gradient background */
+    border-radius: 10px;
+    position: relative;
+    width: fit-content; /* Keeps the width around the content */
+    height: fit-content; /* Keeps the height around the content */
+    box-sizing: border-box; /* Ensures padding is included in width/height */
+    animation: glitchTitle 1.5s infinite alternate, neonGlow 2s infinite alternate;
+    text-shadow: cyan, 0 0 20px magenta, 0 0 30px blue;
+    display: flex; /* To center the title inside its container */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    margin-top: 40px;
+}
+
+/* Main Content Section - Sci-Fi Themed */
+/* Main Content Section - Sci-Fi Themed */
+.content-section29010 {
+    background-image: url(galaxy.jpg);
+    padding: 40px;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 1s ease-in-out;
+    z-index: -1;
+    margin-top: 10px;
+    
+    /* Unique Animated Border */
+    border: 4px solid transparent;
+    border-image: linear-gradient(45deg, cyan, magenta, blue) 1;
+    box-shadow: 
+        0 0 15px rgba(0, 255, 255, 0.6), 
+        0 0 30px rgba(0, 140, 255, 0.9), 
+        inset 0 0 15px rgba(255, 0, 255, 0.7);
+    
+    /* Animated Border Effect */
+    animation: glowingBorder 3s infinite linear;
+}
+
+/* Glowing Border Animation */
+@keyframes glowingBorder {
+    0% {
+        border-image-source: linear-gradient(45deg, cyan, magenta, blue);
+        box-shadow: 
+            0 0 15px rgba(0, 255, 255, 0.6), 
+            0 0 30px rgba(0, 140, 255, 0.9), 
+            inset 0 0 15px rgba(255, 0, 255, 0.7);
+    }
+    50% {
+        border-image-source: linear-gradient(45deg, blue, cyan, magenta);
+        box-shadow: 
+            0 0 25px rgba(0, 140, 255, 1), 
+            0 0 40px rgba(255, 0, 255, 0.9), 
+            inset 0 0 20px rgba(0, 255, 255, 0.8);
+    }
+    100% {
+        border-image-source: linear-gradient(45deg, magenta, blue, cyan);
+        box-shadow: 
+            0 0 15px rgba(0, 255, 255, 0.6), 
+            0 0 30px rgba(0, 140, 255, 0.9), 
+            inset 0 0 15px rgba(255, 0, 255, 0.7);
+    }
+}
+
+/* Floating Glowing Header - Advanced Sci-Fi */
+.h21 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 2px;
+    text-shadow: 
+        0 0 10px rgba(0, 255, 255, 1), 
+        0 0 20px rgba(0, 140, 255, 1),
+        0 0 40px rgba(0, 140, 255, 0.8);
+    padding-bottom: 10px;
+    position: relative;
+    display: inline-block;
+    animation: neonGlow 2s infinite alternate ease-in-out, fadeIn 1s ease-in;
+}
+
+/* Sci-Fi Glow Effect - Advanced */
+.glow {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 12px;
+    background: linear-gradient(90deg, rgba(0, 140, 255, 0.8), rgba(255, 0, 255, 0.8));
+    box-shadow: 
+        0 0 15px rgba(0, 255, 255, 0.8), 
+        0 0 25px rgba(255, 0, 255, 0.9),
+        inset 0 0 10px rgba(255, 255, 255, 0.5);
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.9);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Glow Hover Effect */
+.glow:hover {
+    transform: scale(1.05);
+    box-shadow: 
+        0 0 25px rgba(0, 255, 255, 1), 
+        0 0 35px rgba(255, 0, 255, 1),
+        inset 0 0 15px rgba(255, 255, 255, 0.7);
+}
+
+/* Neon Border Flicker Effect */
+.glow::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 12px;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 
+        0 0 10px rgba(0, 255, 255, 0.9),
+        0 0 20px rgba(255, 0, 255, 0.9);
+    opacity: 0.8;
+    animation: flicker 1.5s infinite alternate ease-in-out;
+}
+
+/* Sci-Fi Glowing Underline Effect */
+.h21::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, rgba(0, 255, 255, 0.8), rgba(255, 0, 255, 0.8));
+    box-shadow: 0 0 10px rgba(0, 255, 255, 1), 0 0 20px rgba(255, 0, 255, 1);
+    margin-top: 5px;
+    animation: glowBar 1.5s infinite alternate ease-in-out;
+}
+
+/* Animations */
+@keyframes neonGlow {
+    0% { text-shadow: 0 0 15px rgba(0, 255, 255, 1), 0 0 25px rgba(0, 140, 255, 1); }
+    100% { text-shadow: 0 0 20px rgba(0, 255, 255, 0.9), 0 0 30px rgba(0, 140, 255, 0.9); }
+}
+
+@keyframes flicker {
+    0% { opacity: 0.6; box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); }
+    100% { opacity: 1; box-shadow: 0 0 15px rgba(255, 255, 255, 0.9); }
+}
+
+@keyframes glowBar {
+    0% { transform: scaleX(1); }
+    100% { transform: scaleX(1.1); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* Sci-Fi Text */
+.content-section29010 p {
+    font-size: 18px;
+    color: #ddd;
+    line-height: 1.6;
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.7);
+    margin: auto;
+}
+
+/* Bold Text with Neon Effect */
+.content-section29010 strong {
+    color: #ff4fff;
+    text-shadow: 0 0 5px rgba(255, 0, 255, 1), 0 0 10px rgba(255, 100, 255, 0.8);
+}
+
+/* Glowing Emoji Effect */
+.content-section29010 p strong::after {
+    content: " 🚀";
+    display: inline-block;
+    animation: floatEmoji 2s infinite alternate ease-in-out;
+}
+
+/* Animations */
+@keyframes glowPulse {
+    0% { text-shadow: 0 0 10px rgba(0, 255, 255, 1), 0 0 20px rgba(0, 140, 255, 1); }
+    100% { text-shadow: 0 0 15px rgba(0, 255, 255, 0.9), 0 0 25px rgba(0, 140, 255, 0.9); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes floatEmoji {
+    0% { transform: translateY(0px); }
+    100% { transform: translateY(-5px); }
+}
+
+.woy{
+    position: sticky;
+}
+/* Sci-Fi Advanced Technology Header */
+/* Sci-Fi Advanced Technology Header */
+
+
+/* Main Container - Sci-Fi Themed */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 90%;
+    margin: auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(255, 0, 255, 0.5);
+    position: relative;
+    z-index: 5;
+    border: 5px solid;
+    border-image: linear-gradient(45deg, magenta, blue, purple, red) 1;
+    border-radius: 20px;
+    animation: floatEffect 0.5s infinite alternate ease-in-out;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    overflow: hidden;
+}
+/* Sci-Fi Title */
+.sparkle-title2 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
+    color: cyan;
+    text-shadow: 0 0 10px cyan, 0 0 20px magenta, 0 0 30px blue;
+    text-align: center;
+    animation: glitchTitle 1.5s infinite alternate, neonGlow 2s infinite alternate;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    background: linear-gradient(90deg, rgba(0, 255, 255, 0.2), rgba(255, 0, 255, 0.2));
+    padding: 10px;
+    border-radius: 10px;
+}
+
+@keyframes glitchTitle {
+    0% { text-shadow: 2px 2px 5px magenta, -2px -2px 5px cyan; }
+    50% { text-shadow: -2px -2px 5px magenta, 2px 2px 5px cyan; }
+    100% { text-shadow: 2px -2px 5px magenta, -2px 2px 5px cyan; }
+}
+
+@keyframes neonGlow {
+    0% { opacity: 1; }
+    100% { opacity: 0.8; }
+}
+/* Sci-Fi Advanced Navigation Bar */
+
+
+/* Numbered Heading */
+.numbered-heading {
+    display: block;
+    font-size: 6.4em; /* 4x lebih besar dari 1.6em */
+    font-weight: 800; /* Lebih tebal */
+    color: #ffffff; 
+    padding: 32px 60px; /* Padding lebih besar */
+    border-radius: 20px; 
+    text-align: center;
+    width: 90%; /* Lebih luas */
+    max-width: 1600px; /* Maksimal lebar diperbesar */
+    margin: 50px auto; /* Pusatkan dengan margin auto */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); 
+    transition: all 0.3s ease-in-out;
+    background: repeating-linear-gradient(
+        45deg, 
+        rgba(0, 204, 255, 0.4), 
+        rgba(0, 204, 255, 0.4) 40px, 
+        rgba(0, 51, 204, 0.4) 40px, 
+        rgba(0, 51, 204, 0.4) 80px
+    );
+    border: 6px solid transparent;
+    box-shadow: 0 0 50px hwb(216 7% 3% / 0.8);
+    border-left: 12px solid #0088ff;
+    border-top: 12px solid #00aaff;
+}
+
+/* Alternatif jika ingin pakai Flexbox */
+.center-container {
+    display: flex;
+    justify-content: center; /* Pusatkan secara horizontal */
+    align-items: center; /* Pusatkan secara vertikal */
+    height: 100vh; /* Agar elemen berada di tengah layar */
+}
+
+/* Alternatif jika ingin pakai Flexbox */
+.center-container {
+    display: flex;
+    justify-content: center; /* Pusatkan secara horizontal */
+    align-items: center; /* Pusatkan secara vertikal */
+    height: 100vh; /* Agar elemen berada di tengah layar */
+}
+
+/* Enhanced Hover Effect */
+.numbered-heading:hover {
+    color: #fff; /* Changes text color to white */
+    border-left-color: #b8deff; /* Changes the left border color */
+    border-top-color: #a5e1ff; /* Changes the top border color */
+    transform: translateY(-3px) scale(1.05) rotate(0.5deg); /* Slight upward movement, scaling, and tilt */
+    box-shadow: 
+        0 0 30px #00f7ff, 
+        0 0 60px #0066ff, 
+        inset 0 0 15px rgba(0, 255, 255, 0.6);
+    text-shadow: 0 0 15px #00f7ff, 0 0 30px #0044ff;
+    transition: all 0.3s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+
+h3 {
+    font-size: 4em; /* Slightly larger font size for prominence */
+    font-weight: 700; /* Bolder for a stronger impact */
+    text-transform: uppercase; /* Techno vibes */
+    letter-spacing: 1.5px; /* Spacing for a futuristic look */
+    color: #ffffff;
+    padding: 12px 20px;
+    border-left: 5px solid #85b8ff;
+    border-radius: 10px;
+    text-align: center;
+    background: repeating-linear-gradient(45deg, 
+        rgba(0, 204, 255, 0.2), rgba(0, 204, 255, 0.2) 10px, 
+        rgba(0, 51, 204, 0.2) 10px, rgba(0, 51, 204, 0.2) 20px);
+    box-shadow: 
+        0 0 15px rgba(0, 255, 255, 0.6), 
+        0 0 30px rgba(0, 102, 255, 0.5), 
+        inset 0 0 10px rgba(0, 204, 255, 0.7);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Animated Glow Pulse */
+@keyframes glow-pulse {
+    0% { text-shadow: 0 0 10px #00f7ff, 0 0 20px #0066ff; }
+    50% { text-shadow: 0 0 15px #00ccff, 0 0 30px #0044ff; }
+    100% { text-shadow: 0 0 10px #00f7ff, 0 0 20px #0066ff; }
+}
+h3 {
+    animation: glow-pulse 1.5s infinite alternate;
+}
+
+/* Hover Effects - Tech Glow */
+h3:hover {
+    color: #fff;
+    border-left-color: #b8deff;
+    border-top-color: #a5e1ff;
+    transform: translateY(-3px) scale(1.08) rotate(0.5deg);
+    box-shadow: 
+        0 0 25px #00f7ff, 
+        0 0 50px #0066ff, 
+        inset 0 0 15px rgba(0, 255, 255, 0.6);
+    text-shadow: 0 0 15px #00f7ff, 0 0 30px #0044ff;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Scanning Line Effect */
+h3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 120%;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, #00f7ff, transparent);
+    transform: translateX(-50%);
+    animation: scanline 2.5s infinite alternate ease-in-out;
+}
+
+h3:hover {
+    animation: electric-border 1.5s infinite alternate;
+}
+/* Header Section */
+.header {
+    grid-column: 1 / -1;
+    color: white;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 30px;
+    border-radius: 40px 10px 40px 10px; /* Border unik */
+    height: fit-content;
+    background: linear-gradient(135deg, rgba(0, 17, 255, 0.8), rgba(114, 0, 235, 0.5), rgba(81, 142, 185, 0.5));
+    box-shadow: rgba(51, 132, 255, 0.5);
+    border: 3px solid transparent;
+    background-clip: padding-box;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Animated Neon Border */
+.header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 40px 10px 40px 10px;
+    padding: 4px;
+    background: linear-gradient(135deg, #ff00ff, #00ffff);
+    -webkit-mask: 
+        linear-gradient(white, white) content-box, 
+        linear-gradient(white, white);
+    mask: 
+        linear-gradient(white, white) content-box, 
+        linear-gradient(white, white);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    animation: border-glow 1.5s infinite alternate;
+}
+/* Hover Effect */
+.header:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 30px rgba(123, 0, 255, 0.7);
+}
+/* Grid Container: Sci-Fi Background */
+.grid-container {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, rgba(0, 229, 255, 0.15), rgba(0, 51, 102, 0.2));
+    box-shadow: 0 0 50px rgba(0, 72, 255, 0.4);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.grid-container:hover {
+    transform: scale(1.02);
+    border-color: #00f7ff;
+    box-shadow: 0 0 70px rgba(0, 255, 255, 0.6);
+}
+
+  /* Universal Box Styling for Elements in the Grid */
+  .grid-container div {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Header Section */
+  .header {
+    grid-column: 1 / -1;
+    color: white;
+    text-align: center;
+    animation: header-flicker 3s infinite alternate;
+    box-shadow: 0 0 30px rgba(8, 158, 128, 0.8);
+    border-radius: 50px;
+    border-color: 2px pink;
+    height: fit-content;
+    font-size: 1.1em;
+    padding: 30px;
+    background:  linear-gradient(135deg, rgba(0, 17, 255, 0.856), rgba(114, 0, 235, 0.162), rgba(81, 142, 185, 0.659), rgba(125, 11, 183, 0.266), rgba(172, 99, 208, 0.266));
+  }
+  .header:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(123, 0, 255, 0.8);
+  }
+
+/* LEFT COLUMN - Holographic Look */
+.column-left {
+    background: linear-gradient(135deg,  
+    rgba(185, 19, 223, 0.6),  /* Vibrant Neon Purple */
+    rgba(90, 60, 180, 0.5),   /* Deep Electric Blue */
+    rgba(24, 190, 255, 0.5),   /* Deep Electric Blue */
+    rgba(104, 6, 146, 0.5),   /* Deep Electric Blue */
+    rgba(10, 30, 80, 0.7)     /* Dark Sci-Fi Navy */
+);
+    border:dashed 2px solid rgba(111, 132, 239, 0.6);
+    box-shadow: 0 0 12px rgb(133, 194, 255),  
+                0 0 25px rgba(48, 77, 225, 0.3);
+    
+    border-radius: 15px;  /* Adds a smooth sci-fi panel look */
+    border-top: 5px dashed rgba(16, 8, 101, 0.7); /* Glowing Dark Blue Border */
+    border-right: 5px dashed rgba(255, 255, 255, 0.7); /* Glowing Dark Blue Border */
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    padding: 10px;
+    padding-right: 20px;
+    text-align: justify;
+    font-weight: bolder;
+    width: 400px;
+    text-align: center;
+    border-radius: 50px 10px 50px 10px;
+    box-shadow: 0 0 25px rgba(162, 0, 255, 0.6);
+    transition: 0.3s;
+    height: 700px;
+    font-size: 1.em;
+    
+}
+
+.column-left:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px rgb(31, 128, 220);
+}
+/* MIDDLE COLUMN - Enhanced Cyberpunk Panel */
+.column-middle {
+    background: repeating-linear-gradient(45deg, 
+        rgba(75, 3, 143, 0.3),    /* Soft Deep Purple */
+        rgba(87, 12, 117, 0.6) 10px, /* Vibrant Purple */
+        rgba(102, 0, 255, 0.5) 10px, /* Electric Blue */
+        rgba(30, 74, 157, 0.7) 20px  /* Light Cyan */
+    );
+
+    border-top: 5px dashed rgba(17, 0, 36, 0.7); /* Glowing Dark Blue Border */
+    border-bottom: 5px dashed rgba(255, 255, 255, 0.7); /* Glowing Dark Blue Border */
+    padding: 10px;
+    width: 400px;
+    text-align: right;
+    border-radius: 30px 10px 50px 20px; /* Different radius for each corner */
+    box-shadow: 0 0 30px rgba(70, 53, 224, 0.8); /* Soft Glow Shadow */
+    transition: 0.3s ease;
+    height:500px;
+    font-weight: bold;
+    padding-right: 40px;
+    padding-top: 10px;
+}
+
+/* Hover Effect with Stronger Glow */
+.column-middle:hover {
+    transform: rotateX(5deg);
+    box-shadow: 0 0 60px rgba(0, 102, 255, 1),  /* Brighter Blue Glow */
+                0 0 100px rgba(0, 204, 255, 0.6); /* Extra Neon Glow on Hover */
+}
+/* RIGHT COLUMN - Digital Grid */
+/* RIGHT COLUMN - Digital Grid */
+.column-right {
+    background: linear-gradient(135deg, 
+    rgba(19, 3, 57, 0.9) 0%,          /* Deep dark purple */
+    rgba(58, 15, 94, 0.6) 30%,       /* Darker purple transition */
+    rgba(85, 24, 255, 0.4) 60%,      /* Bright, bold purple */
+    rgba(148, 128, 248, 0.2) 100%    /* Light, soft purple glow */
+);
+    border: 3px solid transparent; /* Transparent base border for better gradient effect */
+    background-clip: border-box; /* Ensures the background color applies to the box */
+    padding: 20px;
+    width: 270px;
+    text-align: center;
+    border-radius: 30px 60px 20px 50px; /* Unique border-radius with varying curves for a futuristic effect */
+    box-shadow: 0 0 30px rgba(85, 24, 255, 0.6), 0 0 15px rgba(19, 3, 57, 1); /* Glowing shadows */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+    font-weight: bold;
+    text-align: left;
+    
+    /* Unique borders */
+    border-top: 5px dashed rgba(255, 255, 255, 0.7); /* Top border with purple glow */
+    border-right: 5px solid rgba(19, 3, 57, 0.8); /* Right border with dark blue tone */
+}
+
+.column-right:hover {
+    transform: scale(1.05) rotate(-3deg); /* Slight rotation for futuristic feel */
+    box-shadow: 0 0 50px rgba(85, 24, 255, 1), 0 0 35px rgba(19, 3, 57, 1); /* Stronger glowing shadows on hover */
+    background: linear-gradient(135deg, 
+    rgba(19, 3, 57, 1) 0%,           /* Dark purple shade */
+    rgba(111, 13, 192, 0.8) 30%,      /* Deeper purple transition */
+    rgba(147, 188, 255, 0.6) 60%,     /* Bright purple */
+    rgba(10, 133, 214, 0.3) 100%   /* Light purple glow at the end */
+    );
+    
+    /* Enhanced borders on hover */
+    border-top: 5px solid rgb(102, 255, 250); /* Intensified top border */
+    border-right: 5px solid rgba(19, 3, 57, 1); /* Intensified right border */
+}
+
+
+
+/* Headings */
+h3 {
+    font-size: 1.8em;
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+}
+
+img {
+    border-radius: 100px 20px 50px;
+    box-shadow: 0 0 20px cyan, 0 0 30px rgba(0, 255, 255, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Holographic Border Animation */
+img::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-top: 2px dashed;
+    border-image: linear-gradient(45deg, cyan, magenta, blue, lime) 1;
+    border-radius: inherit;
+    animation: holographicBorder 2s linear infinite;
+}
+
+@keyframes holographicBorder {
+    0% { border-image-source: linear-gradient(45deg, cyan, magenta, blue, lime); }
+    50% { border-image-source: linear-gradient(45deg, magenta, blue, lime, cyan); }
+    100% { border-image-source: linear-gradient(45deg, blue, lime, cyan, magenta); }
+}
+
+
+.columnside,
+.columnside2 {
+    position: relative;
+    margin: 20px;
+    width: 340px;
+    padding: 15px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    z-index: 10;
+    
+    /* Neon Glow Effect */
+/* Cosmic Nebula Gradient & Glow */
+background: linear-gradient(135deg, rgba(105, 105, 255, 0.9), rgba(43, 12, 145, 0.85), rgba(58, 0, 122, 0.7), rgba(220, 20, 167, 0.5), rgba(255, 146, 226, 0.707));
+box-shadow: 0 6px 25px rgba(0, 255, 255, 0.9), 0 0 50px rgba(255, 105, 180, 0.8), 0 0 80px rgba(255, 255, 255, 0.4);
+
+    /* Smooth Transition */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+
+    /* Border Animation */
+    border: 5px solid transparent;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    animation: borderAnimation 3s infinite alternate;
+}
+
+/* Hover Effect - Digital Cyber Glow */
+.columnside:hover,
+.columnside2:hover {
+    transform: translateY(-5px) scale(1.03);
+
+}
+
+
+.columnside {
+    float: inline-start;
+    border-radius: 400px 200px 100px 50px; /* Bentuk membulat ke satu arah */
+}
+
+.columnside2 {
+    float: right;
+    border-radius:  200px 400px 50px 100px; /* Membalik urutan sudut untuk efek berlawanan */
+}
+
+
+.columnside:hover,
+.columnside2:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+.columnside img,
+.columnside2 img {
+    display: block;
+    width: 280px;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 255, 255, 0.6), 0 4px 20px rgba(0, 140, 255, 0.8);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    animation: neonPulse 2s infinite alternate;
+}
+
+/* Pulse Animation */
+@keyframes neonPulse {
+    0% {
+        box-shadow: 0 2px 8px rgba(0, 255, 255, 0.5), 0 4px 16px rgba(0, 140, 255, 0.7);
+    }
+    100% {
+        box-shadow: 0 2px 12px rgba(0, 255, 255, 0.8), 0 6px 24px rgba(0, 140, 255, 1);
+    }
+}
+
+/* Hover Effect - Lift & Glow */
+.columnside img:hover,
+.columnside2 img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 3px 15px rgba(0, 255, 255, 0.9), 0 5px 25px rgba(0, 140, 255, 1);
+}
+
+
+/* Hover Effect - Futuristic Glow */
+.columnside img:hover,
+.columnside2 img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 18px rgba(0, 255, 255, 0.6), 0 0 25px rgba(255, 105, 180, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Digital Sci-Fi Overlay Effect */
+.columnside::before,
+.columnside2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, 
+        rgba(50, 0, 150, 0.6),  /* Deep cosmic purple */
+        rgba(0, 100, 255, 0.5), /* Neon electric blue */
+        rgba(0, 255, 255, 0.4)  /* Bright cyan glow */
+    );
+    border-radius: inherit;
+    z-index: -1;
+    filter: blur(8px);
+    transition: background 0.4s ease, filter 0.3s ease;
+}
+
+/* Hover Effect - Stronger Glow */
+.columnside:hover::before,
+.columnside2:hover::before {
+    background: radial-gradient(bottom
+        rgba(80, 0, 180, 0.8),  
+        rgba(0, 120, 255, 0.7), 
+        rgba(0, 255, 255, 0.6)  
+    );
+    filter: blur(5px);
+}
+
+
+/* Hover Effect - Extra Glow */
+.columnside:hover::before,
+.columnside2:hover::before {
+    background: radial-gradient(circle, rgba(0, 255, 255, 0.12), rgba(255, 20, 147, 0.08), rgba(0, 0, 0, 0.3));
+}
+
+/* Sci-Fi Advanced Navigation Bar */
+.pkn-nav {
+    padding: 12px 0;
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-image: url(kankan.jpg);
+    z-index: 999999999 !important; /* Super high z-index */
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.7), 0 0 30px rgba(0, 140, 255, 0.9);
+    border-bottom: 4px solid rgba(0, 255, 255, 0.8);
+    border-radius: 0 0 25px 25px;
+    animation: neonPulse 3s infinite alternate ease-in-out;
+    overflow: visible; /* Ensure visibility */
+}
+/* Pastikan semua child elements juga punya z-index tinggi */
+.pkn-nav ul, .pkn-nav ul li, .pkn-nav ul li a, .pkn-nav ul li a::before, .pkn-nav ul li a::after {
+    z-index: 999999999 !important;
+    position: relative;
+}
+
+@keyframes neonPulse {
+    0% {
+        box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(0, 255, 255, 1), 0 0 40px rgba(0, 140, 255, 1);
+    }
+}
+
+/* Navigation List */
+.pkn-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+    z-index: 10000000;
+}
+
+/* Navigation Items */
+.pkn-nav ul li {
+    display: flex;
+    position: relative;
+    z-index: 10000000;
+}
+
+/* Navigation Links - Futuristic Glow */
+.pkn-nav ul li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #0ff;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 12px 22px;
+    border-radius: 30px;
+    transition: all 0.4s ease;
+    background: linear-gradient(135deg, #00bcd4, #2196f3, #c940ff, #0c1ab5);
+    box-shadow: 0 0 15px rgba(0, 170, 255, 0.7), 0 0 30px rgba(0, 140, 255, 0.9);
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.9), 0 0 20px rgba(0, 140, 255, 0.7);
+    position: relative;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+/* Hover Effect - Sci-Fi Glow */
+.pkn-nav ul li a:hover {
+    transform: scale(1.15);
+    background: linear-gradient(135deg, #281c95, #26c6da, #80ffec, #ea80fc);
+    box-shadow: 0 0 25px rgba(0, 255, 255, 1), 0 0 50px rgba(0, 180, 255, 1);
+    z-index: 1000;
+}
+
+/* Animated Scanlines */
+.pkn-nav ul li a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: repeating-linear-gradient(90deg, rgba(0, 255, 255, 0.1) 0px, transparent 5px);
+    animation: scanlineMove 4s linear infinite;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+@keyframes scanlineMove {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-100%);
+    }
+}
+
+/* Tooltip Effect */
+.pkn-nav ul li a::after {
+    content: attr(title);
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 140, 255, 0.9);
+    color: #ffffff;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.9em;
+    opacity: 0;
+    white-space: nowrap;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 1000;
+}
+
+.pkn-nav ul li a:hover::after {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-5px);
+}
+/* Futuristic Footer */
+.futuristic-footer {
+    background: linear-gradient(90deg, rgba(0, 0, 60, 0.9), rgba(0, 140, 255, 0.8));
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -5px 15px rgba(0, 255, 255, 0.5);
+    border-top: 3px solid rgba(0, 255, 255, 0.7);
+    overflow: hidden;
+}
+
+/* Footer Text */
+.footer-text {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    text-shadow: 0 0 10px cyan, 0 0 15px magenta;
+    margin-bottom: 10px;
+}
+
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.icon {
+    color: cyan;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+    text-shadow: 0 0 15px cyan, 0 0 30px magenta;
+}
+
+/* Glowing Lines Animation */
+.futuristic-footer::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, transparent, cyan, magenta, blue, transparent);
+    animation: glowingLine 3s linear infinite;
+}
+
+@keyframes glowingLine {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+

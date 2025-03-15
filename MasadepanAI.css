@@ -1,0 +1,1127 @@
+/* Global Styles */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-image: url('kankan.jpg');
+    background-size:contain, 90px;
+    background-position: center;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    padding-top: 60px;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* Background Overlay for Better Readability */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: -1;
+}
+/* Main Content Section - Sci-Fi Themed */
+/* Main Content Section - Sci-Fi Themed */
+.content-section29010 {
+    background-image: url(galaxy.jpg);
+    padding: 40px;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 1s ease-in-out;
+    z-index: -1;
+    margin-top: 10px;
+    
+    /* Unique Animated Border */
+    border: 4px solid transparent;
+    border-image: linear-gradient(45deg, cyan, magenta, blue) 1;
+    box-shadow: 
+        0 0 15px rgba(0, 255, 255, 0.6), 
+        0 0 30px rgba(0, 140, 255, 0.9), 
+        inset 0 0 15px rgba(255, 0, 255, 0.7);
+    
+    /* Animated Border Effect */
+    animation: glowingBorder 3s infinite linear;
+}
+
+/* Glowing Border Animation */
+@keyframes glowingBorder {
+    0% {
+        border-image-source: linear-gradient(45deg, cyan, magenta, blue);
+        box-shadow: 
+            0 0 15px rgba(0, 255, 255, 0.6), 
+            0 0 30px rgba(0, 140, 255, 0.9), 
+            inset 0 0 15px rgba(255, 0, 255, 0.7);
+    }
+    50% {
+        border-image-source: linear-gradient(45deg, blue, cyan, magenta);
+        box-shadow: 
+            0 0 25px rgba(0, 140, 255, 1), 
+            0 0 40px rgba(255, 0, 255, 0.9), 
+            inset 0 0 20px rgba(0, 255, 255, 0.8);
+    }
+    100% {
+        border-image-source: linear-gradient(45deg, magenta, blue, cyan);
+        box-shadow: 
+            0 0 15px rgba(0, 255, 255, 0.6), 
+            0 0 30px rgba(0, 140, 255, 0.9), 
+            inset 0 0 15px rgba(255, 0, 255, 0.7);
+    }
+}
+
+/* Floating Glowing Header - Advanced Sci-Fi */
+.h21 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 2px;
+    text-shadow: 
+        0 0 10px rgba(0, 255, 255, 1), 
+        0 0 20px rgba(0, 140, 255, 1),
+        0 0 40px rgba(0, 140, 255, 0.8);
+    padding-bottom: 10px;
+    position: relative;
+    display: inline-block;
+    animation: neonGlow 2s infinite alternate ease-in-out, fadeIn 1s ease-in;
+}
+
+/* Sci-Fi Glow Effect - Advanced */
+.glow {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 12px;
+    background: linear-gradient(90deg, rgba(0, 140, 255, 0.8), rgba(255, 0, 255, 0.8));
+    box-shadow: 
+        0 0 15px rgba(0, 255, 255, 0.8), 
+        0 0 25px rgba(255, 0, 255, 0.9),
+        inset 0 0 10px rgba(255, 255, 255, 0.5);
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.9);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Glow Hover Effect */
+.glow:hover {
+    transform: scale(1.05);
+    box-shadow: 
+        0 0 25px rgba(0, 255, 255, 1), 
+        0 0 35px rgba(255, 0, 255, 1),
+        inset 0 0 15px rgba(255, 255, 255, 0.7);
+}
+
+/* Neon Border Flicker Effect */
+.glow::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 12px;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 
+        0 0 10px rgba(0, 255, 255, 0.9),
+        0 0 20px rgba(255, 0, 255, 0.9);
+    opacity: 0.8;
+    animation: flicker 1.5s infinite alternate ease-in-out;
+}
+
+/* Sci-Fi Glowing Underline Effect */
+.h21::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, rgba(0, 255, 255, 0.8), rgba(255, 0, 255, 0.8));
+    box-shadow: 0 0 10px rgba(0, 255, 255, 1), 0 0 20px rgba(255, 0, 255, 1);
+    margin-top: 5px;
+    animation: glowBar 1.5s infinite alternate ease-in-out;
+}
+
+/* Animations */
+@keyframes neonGlow {
+    0% { text-shadow: 0 0 15px rgba(0, 255, 255, 1), 0 0 25px rgba(0, 140, 255, 1); }
+    100% { text-shadow: 0 0 20px rgba(0, 255, 255, 0.9), 0 0 30px rgba(0, 140, 255, 0.9); }
+}
+
+@keyframes flicker {
+    0% { opacity: 0.6; box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); }
+    100% { opacity: 1; box-shadow: 0 0 15px rgba(255, 255, 255, 0.9); }
+}
+
+@keyframes glowBar {
+    0% { transform: scaleX(1); }
+    100% { transform: scaleX(1.1); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* Sci-Fi Text */
+.content-section29010 p {
+    font-size: 18px;
+    color: #ddd;
+    line-height: 1.6;
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.7);
+    margin: auto;
+}
+
+/* Bold Text with Neon Effect */
+.content-section29010 strong {
+    color: #ff4fff;
+    text-shadow: 0 0 5px rgba(255, 0, 255, 1), 0 0 10px rgba(255, 100, 255, 0.8);
+}
+
+/* Glowing Emoji Effect */
+.content-section29010 p strong::after {
+    content: " 🚀";
+    display: inline-block;
+    animation: floatEmoji 2s infinite alternate ease-in-out;
+}
+
+/* Animations */
+@keyframes glowPulse {
+    0% { text-shadow: 0 0 10px rgba(0, 255, 255, 1), 0 0 20px rgba(0, 140, 255, 1); }
+    100% { text-shadow: 0 0 15px rgba(0, 255, 255, 0.9), 0 0 25px rgba(0, 140, 255, 0.9); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes floatEmoji {
+    0% { transform: translateY(0px); }
+    100% { transform: translateY(-5px); }
+}
+
+.woy{
+    position: sticky;
+}
+/* Sci-Fi Advanced Technology Header */
+/* Sci-Fi Advanced Technology Header */
+
+header {
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.9), 0 0 40px rgba(0, 140, 255, 1);
+    background: linear-gradient(180deg, rgba(0, 20, 60, 0.95), rgba(0, 100, 255, 1));
+    width: 100%;
+    height: 300px;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 4px solid rgba(0, 140, 255, 1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    animation: floatingHeader 5s infinite ease-in-out;
+}
+
+@keyframes floatingHeader {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Sci-Fi Animated Scan Lines */
+header::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(transparent 0px, rgba(0, 200, 255, 0.2) 2px, transparent 4px);
+    animation: scanlines 8s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes scanlines {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-100%);
+    }
+}
+
+/* Header Image with Holographic Effect */
+.header-section img {
+    width: 90%;
+    height: 250px;
+    max-width: 1700px;
+    border-radius: 20px;
+    box-shadow: 
+    0 0 20px rgba(0, 255, 255, 0.8), 
+    0 0 40px rgba(0, 140, 255, 0.6), 
+    0 0 60px rgba(0, 200, 255, 0.4);
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+    filter: contrast(1.3) brightness(1.2) hue-rotate(15deg);
+}
+
+/* Hover Effect - Change Image */
+.header-img:hover {
+    transform: scale(1.1) rotateY(10deg);
+    box-shadow: 0 0 50px rgba(0, 255, 255, 1), 0 0 100px rgba(0, 180, 255, 1);
+    opacity: 0.9;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0px 0px 15px rgba(0, 191, 255, 0.9),
+                     0px 0px 30px rgba(0, 140, 255, 0.7);
+    }
+    100% {
+        text-shadow: 0px 0px 25px rgba(0, 255, 255, 1),
+                     0px 0px 50px rgba(0, 180, 255, 1);
+    }
+}
+
+/* Holographic Shimmering Plasma Wave at the Bottom of the Header */
+header::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    background: linear-gradient(90deg, rgba(0, 255, 255, 0.7), rgba(0, 140, 255, 1), rgba(0, 255, 255, 0.7));
+    opacity: 0.85;
+    filter: blur(15px);
+    animation: shimmeringWave 4s infinite alternate ease-in-out;
+}
+
+@keyframes shimmeringWave {
+    0% {
+        transform: scaleX(1.1) translateY(2px);
+        opacity: 0.9;
+    }
+    50% {
+        opacity: 1;
+        filter: blur(20px);
+    }
+    100% {
+        transform: scaleX(1) translateY(-2px);
+        opacity: 0.8;
+    }
+}
+
+/* Floating Digital Particles */
+@keyframes floatingParticles {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100vh) scale(1.5);
+        opacity: 0;
+    }
+}
+
+.header-section::before, .header-section::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, rgba(0, 255, 255, 0.6) 10%, rgba(0, 0, 50, 0) 70%);
+    border-radius: 50%;
+    top: 75%;
+    left: 25%;
+    animation: floatingParticles 5s infinite linear;
+}
+
+.header-section::after {
+    width: 70px;
+    height: 70px;
+    left: 65%;
+    top: 55%;
+    animation-duration: 7s;
+}
+
+
+.bubble {
+    position: absolute;
+    bottom: -50px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    animation: bubbles 6s infinite linear;
+}
+/* Futuristic Sci-Fi Navigation Bar */
+
+nav {
+    width: 100%;
+    background-image: url(index2.jpg);
+    background-size: cover;
+    padding: 15px 0;
+    z-index: 100;
+    font-family: 'Orbitron', sans-serif;
+    border-bottom: 2px solid linear-gradient(45deg, rgb(169, 2, 224), rgba(77, 124, 235, 0.8));
+    box-shadow: 0px 0px 20px linear-gradient(45deg, rgb(47, 49, 157), rgba(77, 124, 235, 0.8));
+}
+
+nav::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 100%;
+    background-size: contain;
+    box-shadow: 0 0 30px linear-gradient(45deg, rgb(13, 17, 255), rgba(77, 124, 235, 0.8));
+    filter: blur(10px);
+    z-index: -1;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    gap: 30px;
+}
+
+nav ul li {
+    position: relative;
+}
+nav ul li a {
+    text-decoration: none;
+    padding: 12px 25px;
+    color: rgb(255, 255, 255);
+    font-size: 1.3em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, rgb(88, 3, 107), rgba(77, 124, 235, 0.8), #9306ff, #1b1bff, #12e2ff, #7d00ff);
+    border-radius: 50px;
+    box-shadow: 0 0 15px rgba(112, 0, 235, 0.8), 0 0 20px rgba(87, 0, 167, 0.7);
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+}
+
+nav ul li a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(6, 4, 114, 0.3);
+    filter: blur(5px);
+    transition: all 0.5s ease;
+}
+
+nav ul li a:hover::before {
+    left: 100%;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    background: linear-gradient(90deg, #ff00d0, #7f19ff, #004cff, #3cefff);
+    transform: scale(1.2);
+    box-shadow: 0 0 25px rgba(255, 0, 255, 0.8), 0 0 30px rgba(112, 0, 235, 0.9);
+    text-shadow: 0 0 12px rgba(255, 255, 255, 1);
+}
+
+/* Particle Glow Effect */
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(circle, #ff007f, rgba(112, 0, 235, 0.5));
+    border-radius: 50%;
+    filter: blur(8px);
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    animation: particle-glow 2s infinite ease-in-out;
+    z-index: -1;
+}
+
+@keyframes particle-glow {
+    0%, 100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+    50% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+}
+
+
+@keyframes glitch {
+    0% {
+        text-shadow: -2px 2px 5px rgb(192, 248, 255);
+    }
+    100% {
+        text-shadow: 2px -2px 5px rgba(0, 170, 255, 0.7);
+    }
+}
+/* Dropdown Menu - Enhanced */
+.dropdown-content {
+    display: none;
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 30, 0.9);
+    min-width: 220px;
+    box-shadow: 0 0 15px rgba(0, 170, 255, 0.7);
+    border-radius: 15px;
+    padding: 10px 0;
+    z-index: 9999; /* Pastikan lebih tinggi dari elemen lain */
+    overflow: hidden;
+    border: 1px solid rgba(0, 170, 255, 0.6);
+    backdrop-filter: blur(8px);
+}
+
+/* Tambahkan posisi relative ke parent agar dropdown tetap di dalamnya */
+.dropdown {
+    position: relative;
+    z-index: 1000;
+}
+
+/* Pastikan dropdown tidak tertutup elemen lain */
+nav {
+    position: relative;
+    z-index: 100;
+}
+
+/* Hover efek */
+.dropdown-content li {
+    display: block;
+    margin: 0;
+    text-align: center;
+}
+
+.dropdown-content li a {
+    padding: 12px 20px;
+    display: block;
+    color: #0ff;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+}
+
+.dropdown-content li a:hover {
+    background: rgba(0, 170, 255, 0.8);
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* Tampilkan dropdown dengan efek */
+.dropdown:hover .dropdown-content {
+    display: block;
+    animation: dropdown-slide 0.4s ease;
+}
+
+/* Animasi muncul dropdown */
+@keyframes dropdown-slide {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Glitch Effect */
+@keyframes glitchEffect {
+    0% { transform: translate(0, 0); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(2px, -2px); }
+    60% { transform: translate(-1px, 1px); }
+    80% { transform: translate(1px, -1px); }
+    100% { transform: translate(0, 0); }
+}
+
+/* Sci-Fi Title */
+.sparkle-title4 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: 3px;
+
+    /* Text neon glow */
+    text-shadow: 
+        0 0 10px cyan, 
+        0 0 20px magenta, 
+        0 0 30px rgb(255, 255, 255);
+
+    /* Animation */
+    animation: glitchTitle 1.5s infinite alternate, neonGlow 2s infinite alternate;
+
+    /* Background */
+    background: linear-gradient(rgba(0, 255, 255, 0.2), rgba(255, 0, 255, 0.2));
+    border-radius: 10px;
+    padding: 10px 20px;
+
+    /* Centering */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 10px;
+
+    /* Fit the text */
+    width: fit-content;
+    height: fit-content;
+}
+
+/* Title Sci-Fi Decor */
+h3 {
+    font-size: 1.5rem;
+    color: cyan;
+    text-shadow: 0 0 10px cyan, 0 0 20px blue;
+    border-bottom: 2px solid cyan;
+    padding-bottom: 5px;
+    animation: glitch 1s infinite alternate;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Glowing Underline */
+h3::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 50%;
+    height: 3px;
+    background: linear-gradient(90deg, cyan, blue);
+    transform: translateX(-50%);
+    box-shadow: 0 0 10px cyan, 0 0 20px blue;
+    animation: pulseGlow 1.5s infinite alternate;
+}
+
+/* Glitch Effect */
+@keyframes glitch {
+    0% {
+        transform: skewX(0deg);
+    }
+    25% {
+        transform: skewX(5deg);
+    }
+    50% {
+        transform: skewX(-5deg);
+    }
+    75% {
+        transform: skewX(3deg);
+    }
+    100% {
+        transform: skewX(0deg);
+    }
+}
+
+h3::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: rgba(0, 255, 255, 0.8);
+    clip-path: polygon(0% 10%, 100% 10%, 100% 30%, 0% 30%);
+    animation: glitch 0.7s infinite linear;
+}
+
+/* Neon Flicker Effect */
+@keyframes neonFlicker {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Pulse Glow Effect */
+@keyframes pulseGlow {
+    0% {
+        width: 50%;
+    }
+    50% {
+        width: 60%;
+    }
+    100% {
+        width: 50%;
+    }
+}
+.styled-image{
+    margin-top: 20%;
+}
+.columnside,
+.columnside2 {
+    position: relative;
+    margin: 20px;
+    width: 340px;
+    padding: 15px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    z-index: 10;
+    
+    /* Neon Glow Effect */
+/* Cosmic Nebula Gradient & Glow */
+background: linear-gradient(135deg, rgba(9, 9, 105, 0.9), rgba(43, 12, 145, 0.85), rgba(58, 0, 122, 0.7), rgba(220, 20, 167, 0.5), rgba(255, 146, 226, 0.707));
+box-shadow: 0 6px 25px rgba(0, 255, 255, 0.9), 0 0 50px rgba(255, 105, 180, 0.8), 0 0 80px rgba(255, 255, 255, 0.4);
+
+    /* Smooth Transition */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+
+    /* Border Animation */
+    border: 5px solid transparent;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    animation: borderAnimation 3s infinite alternate;
+}
+
+/* Hover Effect - Digital Cyber Glow */
+.columnside:hover,
+.columnside2:hover {
+    transform: translateY(-5px) scale(1.03);
+
+}
+
+
+.columnside {
+    float: inline-start;
+    border-radius: 400px 200px 100px 50px; /* Bentuk membulat ke satu arah */
+}
+
+.columnside2 {
+    float: right;
+    border-radius:  200px 400px 50px 100px; /* Membalik urutan sudut untuk efek berlawanan */
+}
+
+
+.columnside:hover,
+.columnside2:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+.styled-image{
+    margin-top: 40%;
+}
+.columnside img,
+.columnside2 img {
+    width: 285px;
+    border-radius: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 18px rgba(0, 255, 255, 0.6), 0 0 25px rgba(255, 105, 180, 0.5);
+}
+
+/* Hover Effect - Futuristic Glow */
+.columnside img:hover,
+.columnside2 img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 18px rgba(0, 255, 255, 0.6), 0 0 25px rgba(255, 105, 180, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Digital Sci-Fi Overlay Effect */
+.columnside::before,
+.columnside2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, 
+        rgba(50, 0, 150, 0.6),  /* Deep cosmic purple */
+        rgba(0, 100, 255, 0.5), /* Neon electric blue */
+        rgba(0, 255, 255, 0.4)  /* Bright cyan glow */
+    );
+    border-radius: inherit;
+    z-index: -1;
+    filter: blur(8px);
+    transition: background 0.4s ease, filter 0.3s ease;
+}
+
+/* Hover Effect - Stronger Glow */
+.columnside:hover::before,
+.columnside2:hover::before {
+    background: radial-gradient(bottom
+        rgba(80, 0, 180, 0.8),  
+        rgba(0, 120, 255, 0.7), 
+        rgba(0, 255, 255, 0.6)  
+    );
+    filter: blur(5px);
+}
+
+
+/* Hover Effect - Extra Glow */
+.columnside:hover::before,
+.columnside2:hover::before {
+    background: radial-gradient(circle, rgba(0, 255, 255, 0.12), rgba(255, 20, 147, 0.08), rgba(0, 0, 0, 0.3));
+}
+
+/* Sci-Fi Title */
+.sparkle-title2 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
+    color: cyan;
+    text-shadow: 0 0 10px cyan, 0 0 20px magenta, 0 0 30px blue;
+    text-align: center;
+    animation: glitchTitle 1.5s infinite alternate, neonGlow 2s infinite alternate;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    background: linear-gradient(90deg, rgba(0, 255, 255, 0.2), rgba(255, 0, 255, 0.2));
+    padding: 10px;
+    border-radius: 10px;
+}
+
+@keyframes glitchTitle {
+    0% { text-shadow: 2px 2px 5px magenta, -2px -2px 5px cyan; }
+    50% { text-shadow: -2px -2px 5px magenta, 2px 2px 5px cyan; }
+    100% { text-shadow: 2px -2px 5px magenta, -2px 2px 5px cyan; }
+}
+
+@keyframes neonGlow {
+    0% { opacity: 1; }
+    100% { opacity: 0.8; }
+}
+/* Sci-Fi Advanced Navigation Bar */
+.pkn-nav {
+    padding: 12px 0;
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-image: url(kankan.jpg);
+    z-index: 999999999 !important; /* Super high z-index */
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.7), 0 0 30px rgba(0, 140, 255, 0.9);
+    border-bottom: 4px solid rgba(0, 255, 255, 0.8);
+    border-radius: 0 0 25px 25px;
+    animation: neonPulse 3s infinite alternate ease-in-out;
+    overflow: visible; /* Ensure visibility */
+}
+/* Pastikan semua child elements juga punya z-index tinggi */
+.pkn-nav ul, .pkn-nav ul li, .pkn-nav ul li a, .pkn-nav ul li a::before, .pkn-nav ul li a::after {
+    z-index: 999999999 !important;
+    position: relative;
+}
+
+@keyframes neonPulse {
+    0% {
+        box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(0, 255, 255, 1), 0 0 40px rgba(0, 140, 255, 1);
+    }
+}
+
+/* Navigation List */
+.pkn-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+    z-index: 10000000;
+}
+
+/* Navigation Items */
+.pkn-nav ul li {
+    display: flex;
+    position: relative;
+    z-index: 10000000;
+}
+
+/* Navigation Links - Futuristic Glow */
+.pkn-nav ul li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #0ff;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 12px 22px;
+    border-radius: 30px;
+    transition: all 0.4s ease;
+    background: linear-gradient(135deg, #00bcd4, #2196f3, #c940ff, #0c1ab5);
+    box-shadow: 0 0 15px rgba(0, 170, 255, 0.7), 0 0 30px rgba(0, 140, 255, 0.9);
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.9), 0 0 20px rgba(0, 140, 255, 0.7);
+    position: relative;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+/* Hover Effect - Sci-Fi Glow */
+.pkn-nav ul li a:hover {
+    transform: scale(1.15);
+    background: linear-gradient(135deg, #281c95, #26c6da, #80ffec, #ea80fc);
+    box-shadow: 0 0 25px rgba(0, 255, 255, 1), 0 0 50px rgba(0, 180, 255, 1);
+    z-index: 1000;
+}
+
+/* Animated Scanlines */
+.pkn-nav ul li a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: repeating-linear-gradient(90deg, rgba(0, 255, 255, 0.1) 0px, transparent 5px);
+    animation: scanlineMove 4s linear infinite;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+@keyframes scanlineMove {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-100%);
+    }
+}
+
+/* Tooltip Effect */
+.pkn-nav ul li a::after {
+    content: attr(title);
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 140, 255, 0.9);
+    color: #ffffff;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.9em;
+    opacity: 0;
+    white-space: nowrap;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 1000;
+}
+
+.pkn-nav ul li a:hover::after {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-5px);
+}
+
+/* Grid Container */
+.content-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center elements in a row */
+    gap: 20px; /* Add space between boxes */
+    padding: 20px;
+}
+
+/* Sci-Fi Content Box */
+.content-box {
+    width:  500px;
+    max-width: 100%;
+    height: fit-content;
+    background: linear-gradient(45deg, rgb(88, 3, 107), rgba(77, 124, 235, 0.8), #9306ff, #1b1bff, #12e3ff81, #7d00ff);
+    border-radius: 100px 20px;
+    box-shadow: 0 0 20px rgba(0, 186, 255, 0.7), 0 0 30px rgba(112, 0, 235, 0.5);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    margin-top: -5%;
+
+}
+
+/* Sci-Fi Glow Hover */
+.content-box:hover {
+    transform: scale(1.07);
+    box-shadow: 0 0 40px rgba(0, 255, 255, 1), 0 0 50px rgba(112, 0, 235, 0.8);
+    background: linear-gradient(45deg, rgba(88, 3, 107, 0.077), rgba(77, 125, 235, 0.241), #9306ff3d, #1b1bff26, #12e2ff, #7d00ff);
+}
+
+/* Subtle Pulse Animation */
+@keyframes pulseGlow {
+    0% { box-shadow: 0 0 15px rgba(0, 186, 255, 0.6); }
+    50% { box-shadow: 0 0 25px rgba(0, 255, 255, 0.9); }
+    100% { box-shadow: 0 0 15px rgba(0, 186, 255, 0.6); }
+}
+
+/* Apply pulse effect */
+.content-box {
+    animation: pulseGlow 2s infinite alternate;
+}
+/* Techno-Galaxy Subtitle */
+.box-title {
+    font-size: 1.2rem; /* Slightly smaller than main title */
+    color: #d0f0ff; /* Soft neon blue */
+    text-align: center;
+        font-family: 'Poppins', sans-serif;
+
+    /* Neon Glow Effect */
+    text-shadow: cyan;
+    /* Gradient Background */
+    background: linear-gradient(90deg, rgba(0, 38, 255, 0.16), rgba(229, 142, 229, 0.111), rgba(112, 0, 255, 0.3));
+    border-style: dashed;
+    border-color: #ffffff77;
+    border-radius: 50px 20px;
+    border-width: 2px;
+
+
+    /* Centering */
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Effects */
+    transition: text-shadow 0.4s ease, transform 0.4s ease, background 0.4s ease;
+    animation: neonPulse 3s infinite alternate;
+}
+
+/* Hover Effect */
+.box-title:hover {
+    transform: scale(1.1);
+    text-shadow: 
+        0 0 15px rgba(0, 255, 255, 1), 
+        0 0 25px rgba(255, 0, 255, 0.9), 
+        0 0 35px rgba(112, 0, 255, 1);
+    background: linear-gradient(90deg, rgba(0, 255, 255, 0.6), rgba(255, 0, 255, 0.6), rgba(112, 0, 255, 0.6));
+}
+
+/* Neon Glow Animation */
+@keyframes neonPulse {
+    0% {
+        text-shadow: 
+            0 0 8px rgba(0, 255, 255, 0.8), 
+            0 0 16px rgba(255, 0, 255, 0.7), 
+            0 0 24px rgba(0, 140, 255, 0.6);
+        filter: brightness(1);
+    }
+    100% {
+        text-shadow: 
+            0 0 15px rgba(0, 255, 255, 1), 
+            0 0 25px rgba(255, 0, 255, 0.9), 
+            0 0 35px rgba(112, 0, 255, 0.8);
+        filter: brightness(1.2);
+    }
+}/* Sci-Fi Hidden Content */
+.content-details {
+    opacity: 0;
+    max-height: 0;
+    margin-top: 10px;
+    font-size: 1.1em;
+    font-family: 'Poppins', sans-serif;
+    font-style: bold;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.95);
+    text-shadow: 
+        0 0 12px rgba(0, 186, 255, 0.9), 
+        0 0 18px rgba(112, 0, 255, 0.7),
+        0 0 25px rgba(255, 0, 255, 0.6);
+
+    padding: 15px;
+    text-align: center;
+    border-left: 4px solid rgba(0, 255, 255, 0.9);
+    border-radius: 8px;
+    
+    /* Multi-layered gradient effect */
+    
+    box-shadow: 0 0 15px rgba(0, 186, 255, 0.5);
+    transition: opacity 0.6s ease-in-out, max-height 0.7s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Reveal Hidden Content */
+.content-box:hover .content-details {
+    opacity: 1;
+    max-height: 500px;
+}
+
+/* Hover Effect on Content Details */
+.content-details:hover {
+    transform: scale(1.05);
+    background: 
+        linear-gradient(120deg, rgba(0, 0, 255, 0.177), rgba(255, 0, 150, 0.5)), 
+        linear-gradient(210deg, rgba(0, 100, 255, 0.4), rgba(0, 255, 200, 0.5));
+    
+    border-left: 4px solid rgba(0, 255, 200, 1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+/* Smooth Reveal Effect with Hover */
+.content-box {
+    position: relative;
+    padding: 15px;
+    background:  linear-gradient(135deg, rgba(0, 17, 255, 0.036), rgba(114, 0, 235, 0.162), rgba(184, 11, 158, 0.321), rgba(40, 65, 191, 0.266));
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 186, 255, 0.5);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 2px dashed rgba(255, 255, 255, 0.8);
+    animation: glowPulse 2s infinite alternate ease-in-out;
+}
+
+/* 3D Hover Effect */
+.content-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(72, 0, 255, 0.7);
+}
+
+/* Glowing Border Effect */
+@keyframes glowPulse {
+    0% {
+        border-color: rgba(0, 186, 255, 0.8);
+        box-shadow: 0 0 15px rgba(0, 186, 255, 0.5);
+    }
+    100% {
+        border-color: rgb(39, 138, 214);
+        box-shadow: 0 0 25px rgba(0, 255, 200, 0.8);
+    }
+}
+
+/* Reveal Hidden Content */
+.content-box:hover .content-details {
+    opacity: 1;
+    max-height: 500px;
+}
